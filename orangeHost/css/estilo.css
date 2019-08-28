@@ -1,0 +1,407 @@
+/* importando font Lato do Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+/* resetando as propriedades CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* estilizando o body */
+body{
+    width: 100%;
+    height: 100%;
+}
+/* estilizando o NAV / position: fixed; fixa a barra de menu ao topo */
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: #9864CC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.navEsquerda{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.logomarca{
+    width: 54px;
+    height: 54px;
+    margin-left: 50px;
+}
+.logotipo{
+    font-size: 32px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 30px;
+}
+.navDireita{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    margin-right: 15px;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    padding: 15px;
+}
+nav ul li a{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid white;
+}
+.btnLogin{
+    width: 136px;
+    height: 36px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 3px;
+    margin-right: 15px;
+}
+.btnLogin:hover{
+    background-color: white;
+    color: #9864CC;
+}
+.cart{
+    width: 48px;
+    height: 48px;
+    margin-right: 30px;
+}
+
+/* Estilizando os componentes do Header */
+header {
+    width: 100%;
+    height: 768px;
+}
+.bgHeader{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/headerBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+.headerEsquerda{
+    width: 400px;
+    margin: 0px 0px 120px 60px; 
+}
+.txtMaior{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+.txtMenor{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+.headerDireita{
+    width: 380px;
+    height: 100px;
+    margin: 0 25px 100px 0;
+
+}
+.btnHeader{
+    width: 360px;
+    height: 80px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: #9864CC;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnHeader:hover{
+    background-color: white;
+    color: #9864cc;
+}
+/* estilizando os planos de hospedagem */ 
+.planos{
+    width: 100%;
+    height: 768px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.planoImg{
+    width: 128px;
+    height: 128px;
+    margin-top: -64px;
+}
+/* configurações do Start */ 
+.start {
+    width: 346px;
+    min-width: 285.67px;
+    height: 366px;
+    border: 1px solid #E63950;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.planoRotulo{
+    font-family: 'Lato', sans-serif;
+    font-size: 37px;
+    font-weight: bold;
+    color: black; 
+    text-transform: uppercase;
+}
+.planoTxt{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+.btnStart{
+    width: 100%;
+    height: 67px;
+    background-color: #E63950;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* fim do start */ 
+/* select */ 
+.select {
+    width: 346px;
+    min-width: 285.67px;
+    height: 366px;
+    border: 1px solid #FF9900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnSelect{
+    width: 100%;
+    height: 67px;
+    background-color: #FF9900;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* fim do select */ 
+
+/* premium */
+.premium {
+    width: 346px;
+    min-width: 285.67px;
+    height: 366px;
+    border: 1px solid #428DFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnPremium{
+    width: 100%;
+    height: 67px;
+    background-color: #428DFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* alterando o buscador de dominios */
+.buscaDominio{
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/buscaDominioBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.buscaTitulo{
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    color: white;
+    font-weight: 900;
+}
+.buscaForm{
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+}
+.inputBusca{
+    width: 75%;
+    height: 64px;
+    border: 0;
+    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+    color: #615E5E;
+    font-size: 19px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+.inputBusca::placeholder{
+    font-family: 'Lato', sans-serif;
+    color: #CBCBCB;
+    font-size: 19;
+    padding: 15px;
+}
+.btnBusca{
+    width: 20%;
+    height: 64px;
+    background-color: #9864CC;
+    border: 0;
+    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+.btnBusca:hover{
+    background: white;
+    color: #9864CC;
+}
+/* Alterando o estilo da Garantia */
+.garantia{
+    width: 100%;
+    height: 560px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.garantiaImg{
+    width: 636px;
+    height: 468px;
+}
+.garantiaTitulo{
+    font-family: 'Lato', sans-serif;
+    font-size: 37px;
+    font-weight: bold;
+}
+.garantiaTexto{
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+}
+.garantiaTxtSaibaMais{
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+}
+.garantiaContratar{
+    width: 250px;
+    height: 60px;
+    background-color: #9864CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.garantiaContratar:hover{
+    background: none;
+    color: #9864CC;
+    border: 1px solid #9864CC;
+}
+/* estilizando o footer */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #9864CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerLogomarca{
+    width: 64px;
+    height: 64px;
+}
+.meioPgtoMaster{
+    width: 64px;
+    height: 64px;
+}
+.meioPgtoVisa{
+    width: 64px;
+    height: 64px;
+}
+.meioPgtoPaypal{
+    width: 64px;
+    height: 64px;
+}
+.chevronUP{
+    width: 64px;
+    height: 64px;
+}
+.footerLogotipo{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.copyrights{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.esquerdaEsquerda{
+    display: flex;
+    align-items: center;
+}
+.tituloMeio{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
